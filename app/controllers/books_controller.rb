@@ -2,7 +2,9 @@ class BooksController < ApplicationController
   before_action :set_book, only: [:show, :update, :destroy]
 
   def index
-    books = Book.all
+    page = params[:page].to_i > 0 ? params[:page].to_i : 1
+    per_page = params[:per_page].to_i > 0 ? params[:per_page].to_i : 10
+    books = Book.offset((page - 1) * per_page).limit(per_page)
     render json: books
   end
 
