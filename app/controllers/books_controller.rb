@@ -1,5 +1,6 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :update, :destroy]
+  skip_before_action :authenticate_request, only: [:index, :show]
 
   def index
     books = BooksQuery.new(params).call
