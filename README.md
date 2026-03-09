@@ -1,9 +1,23 @@
 # Book Review API
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Database Schema](#database-schema)
+- [API Endpoints](#api-endpoints)
+  - [Authentication](#authentication)
+  - [Books](#books)
+  - [Reviews](#reviews)
+- [Features](#features)
+
+## Overview
+
 REST API for managing books and user reviews.
 
-The API allows users to create books, leave reviews, search books, and retrieve book ratings.
-It supports authentication, pagination, sorting, caching, and rate limiting.
+Users can create books, write reviews, search books, and view ratings.
+The API supports authentication, pagination, sorting, caching, and rate limiting.
 
 ## Tech Stack
 
@@ -14,7 +28,7 @@ It supports authentication, pagination, sorting, caching, and rate limiting.
 
 ---
 
-# Installation
+## Installation
 
 ## Clone the repository
 
@@ -56,7 +70,7 @@ http://localhost:3000
 
 ---
 
-# Database Schema
+## Database Schema
 
 Relations:
 
@@ -70,7 +84,7 @@ Relations:
 
 ---
 
-# API Endpoints
+## API Endpoints
 
 ## Authentication
 
@@ -169,7 +183,7 @@ Request body:
 
 ---
 
-# Features
+## Features
 
 * JWT authentication
 * search by title and author
@@ -178,8 +192,3 @@ Request body:
 * HTTP caching (ETag / stale?)
 * rate limiting
 * Docker environment
-* Database creation
-* Database initialization
-* How to run the test suite
-* Services (job queues, cache servers, search engines, etc.)
-* Deployment instructions
